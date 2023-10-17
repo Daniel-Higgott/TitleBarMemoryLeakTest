@@ -13,6 +13,10 @@ class Document: NSDocument {
         super.init()
         // Add your subclass-specific initialization here.
     }
+    
+    deinit {
+        Swift.print("Deinitialised Document")
+    }
 
     override class var autosavesInPlace: Bool {
         return true
